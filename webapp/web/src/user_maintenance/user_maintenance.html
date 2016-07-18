@@ -24,7 +24,7 @@
             <div flex="10"></div>
         </md-content>
         <md-divider></md-divider>
-        <md-list-item ng-repeat="user in users.userList" ng-click="goToPerson(user.userId, $event)" class="noright" flex>
+        <md-list-item ng-repeat="user in users.userList" class="noright" flex>
             <div flex="20">{{ user.userId}}</div><div flex="50">{{ user.fullName}}</div><div flex="20">{{user.userGroup.groupName}}</div>
             <div flex="10" layout="row">
                 <md-button class="md-icon-button md-primary" aria-label="Clear" ng-click="users.deleteUser(user.userId)">
